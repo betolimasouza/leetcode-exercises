@@ -1,0 +1,12 @@
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\bin\Debug\net5.0\TaskService.deps.json
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\bin\Debug\net5.0\TaskService.dll
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\bin\Debug\net5.0\ref\TaskService.dll
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\bin\Debug\net5.0\TaskService.pdb
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.csprojAssemblyReference.cache
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.AssemblyInfoInputs.cache
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.AssemblyInfo.cs
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.csproj.CoreCompileInputs.cache
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.dll
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\ref\TaskService.dll
+C:\Users\T-Gamer\Documents\LeetCode\leetcode\TaskService\obj\Debug\net5.0\TaskService.pdb
