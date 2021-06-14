@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TaskService
 {
     static public class ArrayTasks
     {
-        //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+        
         static public int RemoveDuplicatesSortedArray(int[] nums)
         {
+            //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
             if (nums.Length == 0) return 0;
 
             int i = 0;
@@ -23,9 +27,11 @@ namespace TaskService
             return i + 1;
         }
 
-        //https://leetcode.com/problems/remove-element/
+        
         static public int RemoveElement(int[] nums, int val)
         {
+            //https://leetcode.com/problems/remove-element/
+
             if (nums.Length == 0) return 0;
 
             int i = 0;
@@ -42,26 +48,25 @@ namespace TaskService
             return i;
         }
 
-        //https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
-        static public int RemoveDuplicatesfromSortedArrayMoreThanTwo(int[] nums)
+
+        static public int[] TwoSum(int[] nums, int target)
         {
-            if (nums.Length == 0) return 0;
+            //https://leetcode.com/problems/two-sum/
+            var indexArr = new int[2];
 
-            int i = 0;
-            int dup = 0;
-
-            for (int j = 0; j < nums.Length; j++)
+            for (int i = 0; i < nums.Length; i++)
             {
-                
-
-                if (nums[j] != nums[i])
+                for (int j = i + 1; j < nums.Length; j++)
                 {
-                    i++;
-                    nums[i] = nums[j];
+                    if (nums[i] + nums[j] == target)
+                    {
+                        indexArr[0] = i;
+                        indexArr[1] = j;
+                    }
                 }
             }
+            return indexArr;
 
-            return i + 1;
         }
     }
 }

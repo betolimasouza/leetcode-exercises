@@ -117,24 +117,56 @@ namespace TaskService.Tests
 
         #endregion
 
-        #region RemoveDuplicateSortedArrayMoreThanTwo
         [Fact]
-        public void RemoveDuplicatesSortedArrayMoreThanTwo_TestLength3()
+        public void TwoSum_Test_4()
         {
-            var nums = new int[] { 1, 1, 1, 2, 2, 3 };
-            var expectedNums = new int[] { 1, 1, 2, 2, 3 };
-            var expectedReturn = 5;
+            int[] nums = { 2, 7, 11, 15 };
+            int target = 9;
 
-            var numReturn = ArrayTasks.RemoveDuplicatesfromSortedArrayMoreThanTwo(nums);
+            int[] indexArr = ArrayTasks.TwoSum(nums, target);
 
-            Assert.Equal(expectedReturn, numReturn);
-
-            for (int i = 0; i < expectedReturn; i++)
-            {
-                Assert.Equal(nums[i], expectedNums[i]);
-            }
-
+            Assert.NotEqual(indexArr[0], indexArr[1]);
+            Assert.Equal(nums[indexArr[0]] + nums[indexArr[1]], target);
         }
-        #endregion
+
+        [Fact]
+        public void TwoSum_Test_2()
+        {
+            int[] nums = { 3, 3 };
+            int target = 6;
+
+            int[] indexArr = ArrayTasks.TwoSum(nums, target);
+
+            Assert.NotEqual(indexArr[0], indexArr[1]);
+            Assert.Equal(nums[indexArr[0]] + nums[indexArr[1]], target);
+        }
+
+        [Fact]
+        public void TwoSum_Test_Zero()
+        {
+            int[] nums = { 0, 4, 3, 0 };
+            int target = 0;
+
+            int[] indexArr = ArrayTasks.TwoSum(nums, target);
+
+            Assert.NotEqual(indexArr[0], indexArr[1]);
+            Assert.Equal(nums[indexArr[0]] + nums[indexArr[1]], target);
+        }
+
+
+        [Fact]
+        public void TwoSum_Test_Negative()
+        {
+            int[] nums = { -1, -2, -3, -4, -5 };
+            int target = -8;
+
+            int[] indexArr = ArrayTasks.TwoSum(nums, target);
+
+            Assert.NotEqual(indexArr[0], indexArr[1]);
+            Assert.Equal(nums[indexArr[0]] + nums[indexArr[1]], target);
+        }
+
+
+
     }
 }
