@@ -1,5 +1,3 @@
-using System;
-using TaskService;
 using Xunit;
 
 namespace TaskService.Tests
