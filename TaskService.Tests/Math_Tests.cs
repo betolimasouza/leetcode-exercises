@@ -12,7 +12,7 @@ namespace TaskService.Tests
         [InlineData(2147483647, 0)]
         public void ReverseInteger(int value, int expected)
         {
-            var result = MathService.ReverseInteger(value);
+            var result = MathTasks.ReverseInteger(value);
 
             Assert.Equal(expected, result);
         }
