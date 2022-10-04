@@ -71,7 +71,7 @@ namespace TaskService
 
         public static object MaxConsecutiveOnes(int[] nums)
         {
-            var currentMaximum = 0;
+            var currentMaximum = 0; 
             var maximum = 0;
 
             for (int i = 0; i < nums.Length; i++)
@@ -90,6 +90,20 @@ namespace TaskService
             }
 
             return maximum;
+        }
+
+        public static int[] RunningSumOfOneDimensionArray(int[] nums)
+        {
+            var result = new int[nums.Length];
+            
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var index = i + 1;
+                result[i] = nums[0..index].Sum();
+            }
+                
+
+            return result;
         }
     }
 }
