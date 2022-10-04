@@ -6,7 +6,7 @@ namespace TaskService
 {
     static public class ArrayTasks
     {
-        
+
         static public int RemoveDuplicatesSortedArray(int[] nums)
         {
             //https://leetcode.com/problems/remove-duplicates-from-sorted-array/
@@ -27,7 +27,7 @@ namespace TaskService
             return i + 1;
         }
 
-        
+
         static public int RemoveElement(int[] nums, int val)
         {
             //https://leetcode.com/problems/remove-element/
@@ -67,6 +67,29 @@ namespace TaskService
             }
             return indexArr;
 
+        }
+
+        public static object MaxConsecutiveOnes(int[] nums)
+        {
+            var currentMaximum = 0;
+            var maximum = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 1)
+                {
+                    currentMaximum++;
+                    if (i == nums.Length - 1)
+                        if (maximum < currentMaximum) maximum = currentMaximum;
+                }
+                else
+                {
+                    if (maximum < currentMaximum) maximum = currentMaximum;
+                    currentMaximum = 0;
+                }
+            }
+
+            return maximum;
         }
     }
 }

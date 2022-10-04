@@ -51,5 +51,14 @@ namespace TaskService.Tests
             Assert.Equal(array[indexArr[0]] + array[indexArr[1]], result);
         }
 
+        [Theory]
+        [InlineData(new int[] {1, 1, 0, 1, 1, 1 }, 3)]
+        [InlineData(new int[] {1, 0, 1, 1, 0, 1 }, 2)]
+        public void MaxConsecutiveOnes(int[] nums, int expectedResult)
+        {
+            var result = ArrayTasks.MaxConsecutiveOnes(nums);
+            Assert.Equal(expectedResult, result);
+        }
+
     }
 }
